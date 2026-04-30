@@ -1,0 +1,36 @@
+# Environment & Secrets (CRITICAL)
+.env
+.env.local
+*.keypair.json
+**/id.json
+**/deploy/*.json
+
+# Build Artifacts (Rust/Anchor)
+/target/
+build/
+dist/
+**/*.rs.bk
+
+# Dependencies
+node_modules/
+vendor/
+
+# Solana Logs & Temp Files
+**/*.log
+test-ledger/
+.banks/
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Anchor Specific
+app/node_modules/
