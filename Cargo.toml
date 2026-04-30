@@ -1,0 +1,22 @@
+[package]
+name = "clmm_amm"
+version = "0.1.0"
+description = "Advanced Concentrated Liquidity AMM on Solana"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "clmm_amm"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+spl-token = { version = "4.0.0", features = ["no-entrypoint"] }
+uint = "0.9.5"
